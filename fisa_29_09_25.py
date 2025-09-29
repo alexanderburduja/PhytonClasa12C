@@ -80,8 +80,9 @@ print('g) maximul numerelor ', max_ab(x,y))
 print('h)',x,'+',y, '=', suma_ab(x,y))
 print('i)',x,'*',y, '=', prod_ab(x,y))
 print('j) divizorii comuni ai numerelor ', div_com_ab(x,y))
-print('j) divizorii comuni ai numerelor ', div_com_ab)
-print('l) cifrele care se contin in ambele ', cif_com_ab)
-print('m) cifrele care se contin doar in prima ', cif_prima_ab)
+print('j) divizorii comuni ai numerelor ', div_com_ab(x,y))
+print('l) cifrele care se contin in ambele ', cif_com_ab(x,y))
+print('m) cifrele care se contin doar in prima ', cif_prima_ab(x,y))
 
-print('n) sunt prietene', prietene)
+print('n) sunt prietene', prietene(x,y))
+
