@@ -48,24 +48,23 @@ def mul_com_ab(a,b, k=5):
           m.append(x*i)
      return m
 
-def cif_com_ab(a,b):
-     a_str= str(a if a>=0 else -a)
-     b_str= str(b if b>=0 else -b)
-     comune=[]
-     for c in a_str:
-          for c in b_str and c not in comune:
-               comune.append(c)
-          return comune    
+def cif_com_ab(a, b):
+    a_str = str(a).replace("-", "")
+    b_str = str(b).replace("-", "")
+    comune = []
+    for c in a_str:
+        if c in b_str and c not in comune:
+            comune.append(c)
+    return comune  
     
-def cif_prima_ab(a,b):
-     a_str= str(a if a>=0 else -a)
-     b_str= str(b if b>=0 else -b)
-     diferite=[]
-     for c in a_str:
-          for c in a_str:
-               if c not in b_str and c not in diferite:
-                    diferite.append(c)           
-     return diferite 
+def cif_prima_ab(a, b):
+    a_str = str(a).replace("-", "")
+    b_str = str(b).replace("-", "")
+    diferite = []
+    for c in a_str:
+        if c not in b_str and c not in diferite:
+            diferite.append(c)
+    return diferite
 
 def prietene(a,b):
      return len(divizori(a)) == len(divizori(b))
@@ -85,4 +84,5 @@ print('l) cifrele care se contin in ambele ', cif_com_ab(x,y))
 print('m) cifrele care se contin doar in prima ', cif_prima_ab(x,y))
 
 print('n) sunt prietene', prietene(x,y))
+
 
