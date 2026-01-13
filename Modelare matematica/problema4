@@ -1,0 +1,23 @@
+import math
+
+H = int(input())
+h0 = int(input())
+u = int(input())
+d = int(input())
+
+conditie = input("zi sau noapte: ").lower()
+
+if conditie == "noapte":
+    h0 -= d
+    if h0 < 0:
+        h0 = 0
+
+if h0 >= H:
+    print(0)
+elif u <= d:
+    print("nu ajunge")
+else:
+    N = math.ceil((H - h0 - u) / (u - d)) + 1
+    if N < 1:
+        N = 1
+    print(N)
