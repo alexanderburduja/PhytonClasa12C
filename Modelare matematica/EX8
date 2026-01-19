@@ -1,0 +1,6 @@
+p = float(input("introdu productivitatea in unitati/ora: "))
+t = float(input("introdu timpul de lucru in ore: "))
+
+n = p * t
+
+print("numarul de unitati produse este:", n)
