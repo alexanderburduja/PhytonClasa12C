@@ -1,0 +1,6 @@
+m = float(input("introdu masa in kg: "))
+h = float(input("introdu inaltimea in m: "))
+
+imc = m / (h * h)
+
+print("indicele de masa corporala IMC este:", imc)
