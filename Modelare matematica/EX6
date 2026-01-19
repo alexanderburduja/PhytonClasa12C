@@ -1,0 +1,6 @@
+a = float(input("introdu suprafata terenului: "))
+d = float(input("introdu doza de ingrasamant: "))
+
+q = a * d
+
+print("cantitatea totala de ingrasamant necesara este ", q, "kg")
