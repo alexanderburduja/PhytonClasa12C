@@ -1,0 +1,15 @@
+km = float(input("introdu distanta in km: "))
+kmh = float(input("introdu viteza in km/h: "))
+
+m = km * 1000
+ms = kmh * 1000 / 3600
+
+t_sec = m / ms
+
+h = int(t_sec // 3600)
+min = int((t_sec % 3600) // 60)
+sec = int(t_sec % 60)
+
+print("distanta:", m, "m")
+print("viteza:", ms, "m/s")
+print("timpul de deplasare:", h, "ore", min, "minute", sec, "secunde")
