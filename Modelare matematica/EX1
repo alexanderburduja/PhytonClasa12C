@@ -1,0 +1,6 @@
+a = float(input("introdu suma economisita pe luna: "))
+n = int(input("introdu numarul de luni: "))
+
+s = a * n
+
+print("suma totala economisita este:", s)
