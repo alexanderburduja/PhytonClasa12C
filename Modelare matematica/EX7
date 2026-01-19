@@ -1,0 +1,7 @@
+c1 = float(input("introdu concentratia initiala c1: "))
+v1 = float(input("introdu volumul initial v1: "))
+v2 = float(input("introdu volumul final v2: "))
+
+c2 = c1 * v1 / v2
+
+print("concentratia dupa dilutie este ", c2)
