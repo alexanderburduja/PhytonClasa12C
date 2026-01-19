@@ -1,0 +1,6 @@
+p = float(input("introdu pretul initial: "))
+R = float(input("introdu reducerea in %: "))
+
+c = p * (1 - R / 100)
+
+print("costul final dupa reducere este:", c)
