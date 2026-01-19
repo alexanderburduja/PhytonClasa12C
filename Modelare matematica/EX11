@@ -1,0 +1,8 @@
+m1 = float(input("introdu masa/volumul apei 1: "))
+t1 = float(input("introdu temperatura apei 1: "))
+m2 = float(input("introdu masa/volumul apei 2: "))
+t2 = float(input("introdu temperatura apei 2: "))
+
+tf = (m1 * t1 + m2 * t2) / (m1 + m2)
+
+print("temperatura dupa amestec este", tf)
