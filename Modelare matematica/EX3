@@ -1,0 +1,6 @@
+p = float(input("introdu puterea aparatului in kW: "))
+t = float(input("introdu timpul de functionare in ore: "))
+
+e = p * t
+
+print("energia consumata este:", e, "kWh")
