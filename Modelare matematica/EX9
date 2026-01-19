@@ -1,0 +1,7 @@
+n0 = float(input("Introdu valoarea initiala: "))
+r = float(input("Introdu rata anuala in %: "))
+n = int(input("Introdu numarul de ani: "))
+
+N = n0 * (1 + (r / 100) * n)
+
+print("valoarea dupa", n, "ani este", N)
